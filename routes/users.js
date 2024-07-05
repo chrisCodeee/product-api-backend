@@ -1,5 +1,5 @@
 const express = require("express");
-const lodash = require("lodash");
+// const lodash = require("lodash");
 const bcrypt = require("bcrypt");
 const { validateRegisterUser, validateLoginUser, User } = require("../models/user");
 const router = express.Router();
