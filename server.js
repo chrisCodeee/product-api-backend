@@ -17,4 +17,4 @@ app.use("/users", users);
 
 // Port
 
-app.listen(PORT, console.log(`App started on port ${PORT}`));
+app.listen(PORT, "0.0.0.0", console.log(`App started on port ${PORT}`));
