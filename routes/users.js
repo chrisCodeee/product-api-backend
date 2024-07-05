@@ -1,7 +1,7 @@
 const express = require("express");
 const lodash = require("lodash");
 const bcrypt = require("bcrypt");
-const { validateRegisterUser, validateLoginUser, User, secretKey } = require("../models/user");
+const { validateRegisterUser, validateLoginUser, User } = require("../models/user");
 const router = express.Router();
 
 // console.log(secretKey);
