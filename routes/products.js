@@ -68,8 +68,8 @@ function escapeRegex(string) {
 }
 
 // To Search for Product
-router.get("/search/:key", auth, async (req, res) => {
-	let result = await Products.find({
+router.get("/search/:userId/:key", auth, async (req, res) => {
+	let result = await Products.find({ _id: req.params.userId }).find({
 		$or: [
 			{
 				name: { $regex: escapeRegex(req.params.key.toLowerCase()) },
